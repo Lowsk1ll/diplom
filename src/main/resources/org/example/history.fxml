@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #fff5cc;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.HistoryController">
+    <children>
+        <ScrollPane fitToWidth="true" layoutX="10.0" layoutY="14.0" prefHeight="560.0" prefWidth="980.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="15.0">
+            <content>
+                <AnchorPane prefHeight="1800.0" prefWidth="966.0" style="-fx-background-color: #ffcccc;">
+                    <children>
+                        <Text fx:id="fioText" layoutX="45.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО:" />
+                        <TextField fx:id="fioField" layoutX="45.0" layoutY="50.0" prefHeight="25.0" prefWidth="300.0" />
+                        <Text fx:id="ageText" layoutX="45.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Возраст:" />
+                        <TextField fx:id="ageField" layoutX="45.0" layoutY="100.0" prefHeight="25.0" prefWidth="300.0" />
+                        <Text fx:id="birthdayText" layoutX="45.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата рождения" wrappingWidth="85.208984375" />
+                        <TextField fx:id="birthdayField" layoutX="45.0" layoutY="150.0" prefHeight="25.0" prefWidth="300.0" />
+                        <Text fx:id="adressText" layoutX="45.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адрес:" />
+                        <TextField fx:id="adressField" layoutX="45.0" layoutY="200.0" prefHeight="25.0" prefWidth="300.0" />
+                        <Text fx:id="inspectionDateText" layoutX="45.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата осмотра:" />
+                        <TextField fx:id="inspectionDateField" layoutX="45.0" layoutY="250.0" prefHeight="25.0" prefWidth="300.0" />
+                        <Text fx:id="institutionDiagnosisText" layoutX="45.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Диагноз направившего учреждения:" />
+                        <TextArea fx:id="institutionDiagnosisArea" layoutX="45.0" layoutY="300.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="complaintsOnReceiptText" layoutX="45.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Жалобы при поступлении:" />
+                        <TextArea fx:id="complaintsOnReceiptArea" layoutX="45.0" layoutY="425.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="curationСomplaintsText" layoutX="45.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Жалобы на момент курации:" />
+                        <TextArea fx:id="curationСomplaintsArea" layoutX="45.0" layoutY="550.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="anamnesisOfLifeText" layoutX="45.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Анамнез жизни:" />
+                        <TextArea fx:id="anamnesisOfLifeArea" layoutX="45.0" layoutY="675.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="objectiveExaminationText" layoutX="45.0" layoutY="795.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Объективное обследование:" />
+                        <TextArea fx:id="objectiveExaminationArea" layoutX="45.0" layoutY="800.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="laboratoryDataText" layoutX="45.0" layoutY="920.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Данные лабораторных исследований:" />
+                        <TextArea fx:id="laboratoryDataArea" layoutX="45.0" layoutY="930.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="instrumentalResearchDataText" layoutX="45.0" layoutY="1045.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Данные инструментальных исследований:" />
+                        <TextArea fx:id="instrumentalResearchDataArea" layoutX="45.0" layoutY="1050.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="differentialDiagnosisText" layoutX="45.0" layoutY="1170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дифференциальный диагноз:" />
+                        <TextArea fx:id="differentialDiagnosisArea" layoutX="45.0" layoutY="1175.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="diagnosisAndJustificationText" layoutX="45.0" layoutY="1295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Диагноз и его обоснование:" />
+                        <TextArea fx:id="diagnosisAndJustificationArea" layoutX="45.0" layoutY="1300.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="treatmentAndJustificationText" layoutX="45.0" layoutY="1420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Лечение и его обоснование:" />
+                        <TextArea fx:id="treatmentAndJustificationArea" layoutX="45.0" layoutY="1425.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="treatmentForPatientText" layoutX="45.0" layoutY="1545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Лечение данного больного:" />
+                        <TextArea fx:id="treatmentForPatientArea" layoutX="45.0" layoutY="1550.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                        <Text fx:id="literatureText" layoutX="45.0" layoutY="1670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Список использованной литературы:" />
+                        <TextArea fx:id="literatureArea" layoutX="45.0" layoutY="1675.0" prefHeight="100.0" prefWidth="600.0" wrapText="true" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="320.0" />
+                    </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Button fx:id="backButton" cancelButton="true" layoutX="105.0" layoutY="595.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" text="Назад" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="105.0" />
+        <Button fx:id="saveButton" layoutX="840.0" layoutY="595.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="75.0" text="Сохранить" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="85.0" />
+    </children>
+</AnchorPane>
